@@ -7,3 +7,7 @@ $(document).on 'ready page:load', ->
     format: "yyyy-mm-dd",
     autoclose: true
   });
+
+  $(document).on 'ready page:load', ->
+  $(".checkable").click ->
+    $(this).parents('form').submit();
